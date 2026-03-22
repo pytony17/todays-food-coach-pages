@@ -78,6 +78,14 @@ a:hover {
     font-size: 14px;
 }
 
+/* ---------- Logo ---------- */
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 0;
+}
+
 /* ---------- Article Image ---------- */
 
 .food-image {
