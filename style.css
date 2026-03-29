@@ -144,9 +144,9 @@ a:hover {
 }
 
 .faq-section {
-border-top: 1px solid #e5e7eb;
-padding-top: 20px;
-margin-top: 40px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+    margin-top: 40px;
 }
 
 /* ---------- Mobile Optimization ---------- */
@@ -165,4 +165,369 @@ margin-top: 40px;
         height: 220px;
     }
 
+}
+
+/* ========================================
+   LANDING PAGE STYLES
+   (Used by: how-to-lose-weight-after-45-male.html, privacy-policy.html, terms-of-service.html)
+   ======================================== */
+
+/* Landing page specific container override */
+.landing-page .container {
+    max-width: 800px;
+    padding: 2rem 2rem 1.5rem;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.landing-page {
+    background: #faf7f2;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: #1e2a2e;
+    padding: 2rem 1rem;
+}
+
+.landing-page .logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.landing-page .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.landing-page h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #2d4a3e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.landing-page .subhead {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #4a5b52;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e9e2d4;
+    padding-bottom: 1rem;
+}
+
+.landing-page h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d4a3e;
+    margin: 1.8rem 0 1rem;
+}
+
+.landing-page .highlight {
+    background: #f0f4e8;
+    padding: 1.2rem;
+    border-left: 5px solid #c2a25b;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+.landing-page .checklist {
+    list-style: none;
+    margin: 1rem 0 1.5rem;
+    padding-left: 0;
+}
+
+.landing-page .checklist li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.landing-page .checklist li::before {
+    content: "✓";
+    color: #c2a25b;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.landing-page .form-box {
+    background: #fefaf5;
+    border: 1px solid #e2dcd2;
+    border-radius: 20px;
+    padding: 2rem 1.8rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.landing-page .form-box h3 {
+    font-size: 1.6rem;
+    color: #2d4a3e;
+    margin-bottom: 0.5rem;
+}
+
+.landing-page .form-box p {
+    margin-bottom: 1.5rem;
+    color: #4a5b52;
+}
+
+.landing-page input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd2c0;
+    border-radius: 60px;
+    font-size: 1rem;
+    background: white;
+}
+
+.landing-page button {
+    background: #c2a25b;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 60px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.landing-page button:hover {
+    background: #a88744;
+}
+
+.landing-page .small-note {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #7e8c85;
+}
+
+.landing-page .app-cta {
+    background: #eef3ea;
+    border-radius: 20px;
+    padding: 1.8rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.landing-page .app-cta .button {
+    display: inline-block;
+    background: #2d4a3e;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 60px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.landing-page hr {
+    border: none;
+    border-top: 1px solid #e9e2d4;
+    margin: 2rem 0 1rem;
+}
+
+.landing-page footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #7b8a7c;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9e2d4;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.landing-page .footer-logo {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.landing-page .footer-logo img {
+    max-height: 30px;
+    width: auto;
+}
+
+.landing-page .footer-links {
+    white-space: nowrap;
+}
+
+.landing-page .footer-links a {
+    color: #5f6c64;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.landing-page .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.landing-page .footer-copyright {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.landing-page .footer-copyright p {
+    margin: 0;
+}
+
+/* Legal pages (privacy policy, terms) */
+.legal-page .container {
+    max-width: 800px;
+    padding: 2rem 2rem 1.5rem;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.legal-page {
+    background: #faf7f2;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #1e2a2e;
+    padding: 2rem 1rem;
+}
+
+.legal-page .logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.legal-page .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.legal-page h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #2d4a3e;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.legal-page .effective-date {
+    text-align: center;
+    color: #7e8c85;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e9e2d4;
+    padding-bottom: 1rem;
+}
+
+.legal-page h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2d4a3e;
+    margin: 1.8rem 0 1rem;
+}
+
+.legal-page h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d4a3e;
+    margin: 1.2rem 0 0.5rem;
+}
+
+.legal-page hr {
+    border: none;
+    border-top: 1px solid #e9e2d4;
+    margin: 1.5rem 0;
+}
+
+.legal-page .back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #5f6c64;
+    text-decoration: none;
+}
+
+.legal-page .back-link:hover {
+    text-decoration: underline;
+}
+
+.legal-page footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #7b8a7c;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9e2d4;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.legal-page .footer-logo {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.legal-page .footer-logo img {
+    max-height: 30px;
+    width: auto;
+}
+
+.legal-page .footer-links {
+    white-space: nowrap;
+}
+
+.legal-page .footer-links a {
+    color: #5f6c64;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.legal-page .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.legal-page .footer-copyright {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Mobile styles for landing and legal pages */
+@media (max-width: 768px) {
+    .landing-page footer,
+    .legal-page footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .landing-page .footer-copyright,
+    .legal-page .footer-copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing-page .container,
+    .legal-page .container {
+        padding: 1.5rem;
+    }
+    
+    .landing-page h1 {
+        font-size: 1.8rem;
+    }
+    
+    .legal-page h1 {
+        font-size: 1.6rem;
+    }
+    
+    .legal-page h2 {
+        font-size: 1.2rem;
+    }
 }
