@@ -42,6 +42,7 @@
       <input type="hidden" name="_subject" value="New Subscription - Lose Weight After 45">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="Page" id="page-source">
       <input type="text" name="name" placeholder="Your first name" required>
       <input type="email" name="email" placeholder="Email address" required>
       <button type="submit">Send me the free guide →</button>
@@ -73,5 +74,9 @@
     </div>
   </footer>
 </div>
+<script>
+  // Auto-populate page source for form tracking
+  document.getElementById('page-source').value = document.title;
+</script>
 </body>
 </html>
