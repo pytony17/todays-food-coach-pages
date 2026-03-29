@@ -37,17 +37,24 @@
   <!-- EMAIL CAPTURE FORM -->
   <div class="form-box">
     <h3>Download the guide – free</h3>
-    <p>Start losing weight this week, not “someday”.</p>
-    <form action="https://formsubmit.co/todaysfoodcoach@gmail.com" method="POST">
+    <p>Start losing weight this week, not "someday".</p>
+    <form id="subscribe-form">
       <input type="hidden" name="_subject" value="New Subscription - Lose Weight After 45">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://formsubmit.co/el/thanks">
       <input type="hidden" name="Page" id="page-source">
       <input type="text" name="name" placeholder="Your first name" required>
       <input type="email" name="email" placeholder="Email address" required>
       <button type="submit">Send me the free guide →</button>
       <div class="small-note">We respect your privacy. Unsubscribe at any time.</div>
     </form>
+    <div id="form-success" style="display: none; text-align: center; padding: 1rem;">
+      <p style="color: #2d4a3e; font-weight: 600; margin-bottom: 1rem;">✓ Check your email! We've sent you a confirmation.</p>
+      <a href="Free%20Nutrition%20Guide.pdf" download class="button" style="background: #c2a25b; color: white; padding: 0.9rem 1.5rem; border-radius: 60px; text-decoration: none; font-weight: 600; display: inline-block;">
+        Download your PDF guide ↓
+      </a>
+    </div>
   </div>
 
   <!-- Introduce the app as the tool that makes the strategy easy -->
@@ -77,6 +84,41 @@
 <script>
   // Auto-populate page source for form tracking
   document.getElementById('page-source').value = document.title;
+
+  // Handle form submission with AJAX
+  document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var form = this;
+    var formData = new FormData(form);
+    var button = form.querySelector('button[type="submit"]');
+    var originalText = button.textContent;
+    
+    // Show loading state
+    button.textContent = 'Sending...';
+    button.disabled = true;
+    
+    fetch('https://formsubmit.co/ajax/todaysfoodcoach@gmail.com', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function(response) {
+      if (response.ok) {
+        // Hide form, show success with download
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      } else {
+        button.textContent = originalText;
+        button.disabled = false;
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(function() {
+      button.textContent = originalText;
+      button.disabled = false;
+      alert('Something went wrong. Please try again.');
+    });
+  });
 </script>
 </body>
 </html>
