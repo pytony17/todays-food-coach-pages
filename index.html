@@ -1,377 +1,160 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Nutrition Guides | Today's Food Coach</title>
-  <meta name="description" content="Free practical nutrition guides for men over 45. Learn what to eat at restaurants, how to stop late-night cravings, and build better habits without calorie counting.">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #fefaf5;
-      color: #2c2c2c;
-      line-height: 1.5;
-    }
+<title>Simple Diet Plans for Men Over 45 | Today's Food Coach</title>
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
+<meta name="description"
+content="Simple, realistic diet plans and meal ideas for men over 45 who want to lose weight without calorie counting or complicated diets.">
 
-    /* Hero section with background image */
-    
+<link rel="stylesheet" href="style.css">
 
-    /* Overlay for text readability */
-    .hero {
-      text-align: center;
-      margin: 1rem 0 2rem;
-    }
-
-    .hero-image {
-      max-width: 560px;
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .hero h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #2f5d3a;
-      margin-bottom: 0.5rem;
-    }
-
-    .subhead {
-      font-size: 1.2rem;
-      color: #4a4a4a;
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
-    }
-
-    .cta-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    .hero-text p {
-      font-size: 1.25rem;
-      color: #fefaf5;
-      margin-bottom: 1.5rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    }
-
-    .logo {
-      display: block;
-      max-width: 180px;
-      margin-bottom: 1rem;
-    }
-
-    /* Call to action buttons */
-    .cta-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1.5rem 0 1rem;
-    }
-
-    /* Adjust button outline version for dark background */
-    .btn-outline {
-      background-color: transparent;
-      border: 2px solid white;
-      color: white;
-    }
-
-    .btn-outline:hover {
-      background-color: white;
-      color: #2f5d3a;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #2f5d3a;
-      color: white;
-      padding: 0.8rem 1.8rem;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: background 0.2s ease;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #1f4228;
-    }
-
-    hr {
-      margin: 2rem 0;
-      border: none;
-      border-top: 1px solid #e6d5c3;
-    }
-
-    /* Guide sections */
-    .section-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #2f5d3a;
-      margin: 2rem 0 1rem;
-      border-left: 5px solid #e0a82b;
-      padding-left: 1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .grid a {
-      display: block;
-      background: white;
-      padding: 0.7rem 1rem;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #1f4228;
-      font-weight: 500;
-      transition: all 0.2s;
-      border: 1px solid #f0e2d4;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
-    }
-
-    .grid a:hover {
-      background-color: #f8f1ea;
-      border-color: #d9c2ae;
-      transform: translateY(-2px);
-    }
-
-    /* Simple list fallback (if grid feels too compact) */
-    .simple-list {
-      list-style: none;
-      padding: 0;
-    }
-    .simple-list li {
-      margin-bottom: 0.5rem;
-    }
-    .simple-list a {
-      text-decoration: none;
-      color: #2f5d3a;
-      font-weight: 500;
-      border-bottom: 1px dotted #e0c8b4;
-    }
-    .simple-list a:hover {
-      color: #e0a82b;
-    }
-
-    .footer-cta {
-      background: #f2e7dd;
-      border-radius: 32px;
-      padding: 2rem;
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    @media (max-width: 700px) {
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-      .subhead {
-        font-size: 1rem;
-      }
-      .hero-image {
-        max-width: 200px;
-      }
-      .hero-text p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .section-title {
-        font-size: 1.5rem;
-      }
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
+
 <body>
+
 <div class="container">
 
-  <!-- Hero: image above headline -->
-  <div class="hero">
-    <img src="./images/LinkedIn_banner.png" alt="Today's Food Coach - healthy meals" class="hero-image">
-    <h1>Eat Smarter After 45</h1>
-    <p class="subhead">Simple, realistic nutrition strategies for men who want to lose weight, boost energy, and stay consistent — without calorie counting.</p>
-    <div class="cta-group">
-      <a href="https://todaysfoodcoach.com/" class="btn">✨ Try the App Free →</a>
-      <a href="#guides" class="btn btn-outline">📘 Browse Guides ↓</a>
-    </div>
-  </div>
+<img src="images/todaysfoodcoach_logo.png" alt="Today's Food Coach Logo" class="logo">
 
-  <!-- Not sure where to start? (Quick wins) -->
-  <h2 class="section-title" id="guides">🍽️ Not sure where to start?</h2>
-  <div class="grid">
-    <a href="pages/how-to-lose-weight-after-45-male.html?from=index">How To Lose Weight After 45 (Male)</a>
-    <a href="pages/how-to-stop-overeating-at-night.html?from=index">How To Stop Overeating At Night</a>
-    <a href="pages/what-to-eat-at-a-restaurant-to-lose-weight.html?from=index">What To Eat At A Restaurant To Lose Weight</a>
-    <a href="pages/how-to-eat-healthy-without-dieting.html?from=index">How To Eat Healthy Without Dieting</a>
-    <a href="pages/simple-diet-plan-for-busy-professionals.html?from=index">Simple Diet Plan For Busy Professionals</a>
-  </div>
+<h1>Simple Diet Plans for Men Over 45</h1>
 
-  <div class="cta-group" style="margin-top: 0;">
-    <a href="https://todaysfoodcoach.com/" class="btn" style="background:#e0a82b; color:#2c2c2c;">🧠 Build My Personalized Plan →</a>
-  </div>
+<p>
+If you're trying to lose weight but don't want to track calories or follow complicated diets, these guides will help you keep things simple.
+</p>
 
-  <hr>
+<p>
+Or skip the guesswork and <a href="https://todaysfoodcoach.com/">get a personalized daily plan here</a>.
+</p>
 
-  <!-- Weight Loss Over 40 -->
-  <h2 class="section-title">⚖️ Weight Loss Over 40</h2>
-  <div class="grid">
-    <a href="pages/best-diet-for-men-over-45-to-lose-weight.html">Best Diet For Men Over 45 To Lose Weight</a>
-    <a href="pages/best-eating-habits-for-men-over-40.html">Best Eating Habits For Men Over 40</a>
-    <a href="pages/best-restaurant-meals-for-weight-loss-men.html">Best Restaurant Meals For Weight Loss (Men)</a>
-    <a href="pages/daily-routine-for-weight-loss-over-40.html">Daily Routine For Weight Loss Over 40</a>
-    <a href="pages/easy-healthy-meals-for-men-over-40.html">Easy Healthy Meals For Men Over 40</a>
-    <a href="pages/healthy-choices-at-a-diner-for-weight-loss.html">Healthy Choices At A Diner For Weight Loss</a>
-    <a href="pages/healthy-fast-food-options-for-weight-loss-men.html">Healthy Fast Food Options For Weight Loss (Men)</a>
-    <a href="pages/healthy-meal-planning-for-men-over-45.html">Healthy Meal Planning For Men Over 45</a>
-    <a href="pages/healthy-options-at-a-restaurant-for-weight-loss.html">Healthy Options At A Restaurant For Weight Loss</a>
-    <a href="pages/healthy-options-at-a-steakhouse-for-weight-loss.html">Healthy Options At A Steakhouse For Weight Loss</a>
-    <a href="pages/healthy-takeout-meals-for-weight-loss.html">Healthy Takeout Meals For Weight Loss</a>
-    <a href="pages/healthy-takeout-options-for-weight-loss.html">Healthy Takeout Options For Weight Loss</a>
-    <a href="pages/how-men-over-50-should-eat.html">How Men Over 50 Should Eat</a>
-    <a href="pages/how-to-avoid-weight-gain-as-you-age.html">How To Avoid Weight Gain As You Age</a>
-    <a href="pages/how-to-eat-out-and-still-lose-weight.html">How To Eat Out And Still Lose Weight</a>
-    <a href="pages/how-to-lose-belly-fat-men-over-50.html">How To Lose Belly Fat (Men Over 50)</a>
-    <a href="pages/how-to-lose-weight-with-a-slow-metabolism.html">How To Lose Weight With A Slow Metabolism</a>
-    <a href="pages/how-to-lose-weight-without-dieting-after-40.html">How To Lose Weight Without Dieting After 40</a>
-    <a href="pages/how-to-speed-up-metabolism-after-45.html">How To Speed Up Metabolism After 45</a>
-    <a href="pages/how-to-stay-consistent-with-weight-loss-over-40.html">How To Stay Consistent With Weight Loss Over 40</a>
-    <a href="pages/meal-plan-for-men-over-50.html">Meal Plan For Men Over 50</a>
-    <a href="pages/quick-healthy-meals-for-busy-men-over-40.html">Quick Healthy Meals For Busy Men Over 40</a>
-    <a href="pages/simple-weight-loss-strategies-for-men-over-45.html">Simple Weight Loss Strategies For Men Over 45</a>
-    <a href="pages/weight-loss-meal-plan-for-men-50.html">Weight Loss Meal Plan For Men 50</a>
-    <a href="pages/what-to-eat-at-a-restaurant-to-lose-weight.html">What To Eat At A Restaurant To Lose Weight</a>
-    <a href="pages/what-to-eat-at-night-when-trying-to-lose-weight.html">What To Eat At Night When Trying To Lose Weight</a>
-    <a href="pages/what-to-eat-for-lunch-at-work-to-lose-weight.html">What To Eat For Lunch At Work To Lose Weight</a>
-    <a href="pages/what-to-order-at-a-restaurant-to-lose-weight.html">What To Order At A Restaurant To Lose Weight</a>
-    <a href="pages/what-to-order-at-a-steakhouse-to-lose-weight.html">What To Order At A Steakhouse To Lose Weight</a>
-    <a href="pages/why-am-i-gaining-weight-after-50.html">Why Am I Gaining Weight After 50</a>
-    <a href="pages/why-diets-fail-for-men-over-40.html">Why Diets Fail For Men Over 40</a>
-    <a href="pages/why-is-it-harder-to-lose-weight-after-40.html">Why Is It Harder To Lose Weight After 40</a>
-  </div>
+<div class="cta">
+<a href="https://todaysfoodcoach.com/" class="cta-button">
+Get Your Daily Plan
+</a>
+</div>
 
-  <!-- Habits & Cravings -->
-  <h2 class="section-title">🧠 Habits & Cravings</h2>
-  <div class="grid">
-    <a href="pages/healthy-snacks-for-late-night-cravings.html">Healthy Snacks For Late Night Cravings</a>
-    <a href="pages/how-to-avoid-overeating-at-night.html">How To Avoid Overeating At Night</a>
-    <a href="pages/how-to-break-the-habit-of-night-eating.html">How To Break The Habit Of Night Eating</a>
-    <a href="pages/how-to-build-healthy-eating-habits-after-40.html">How To Build Healthy Eating Habits After 40</a>
-    <a href="pages/how-to-control-nighttime-cravings.html">How To Control Nighttime Cravings</a>
-    <a href="pages/how-to-stop-late-night-snacking.html">How To Stop Late Night Snacking</a>
-    <a href="pages/how-to-stop-overeating-at-night.html">How To Stop Overeating At Night</a>
-    <a href="pages/how-to-stop-stress-eating-at-night.html">How To Stop Stress Eating At Night</a>
-    <a href="pages/what-to-do-instead-of-eating-at-night.html">What To Do Instead Of Eating At Night</a>
-    <a href="pages/what-to-eat-after-work-when-tired-and-hungry.html">What To Eat After Work When Tired And Hungry</a>
-    <a href="pages/why-am-i-hungry-at-night-after-dinner.html">Why Am I Hungry At Night After Dinner</a>
-    <a href="pages/why-do-i-crave-food-at-night.html">Why Do I Crave Food At Night</a>
-  </div>
+<hr>
 
-  <!-- Eating Out & Real Life -->
-  <h2 class="section-title">🍔 Eating Out & Real Life</h2>
-  <div class="grid">
-    <a href="pages/how-to-eat-healthy-at-an-italian-restaurant.html">How To Eat Healthy At An Italian Restaurant</a>
-    <a href="pages/how-to-eat-healthy-at-fast-food-restaurants.html">How To Eat Healthy At Fast Food Restaurants</a>
-    <a href="pages/what-to-eat-at-an-italian-restaurant-on-a-diet.html">What To Eat At An Italian Restaurant On A Diet</a>
-    <a href="pages/what-to-order-at-a-mexican-restaurant-on-a-diet.html">What To Order At A Mexican Restaurant On A Diet</a>
-  </div>
+<h2>Weight Loss Over 45</h2>
+<ul>
+<li><a href="pages/best-daily-eating-plan-for-men-over-50.html">Best Daily Eating Plan For Men Over 50</a></li>
+<li><a href="pages/best-diet-for-men-over-45-to-lose-weight.html">Best Diet For Men Over 45 To Lose Weight</a></li>
+<li><a href="pages/best-eating-habits-for-men-over-40.html">Best Eating Habits For Men Over 40</a></li>
+<li><a href="pages/best-restaurant-meals-for-weight-loss-men.html">Best Restaurant Meals For Weight Loss Men</a></li>
+<li><a href="pages/daily-routine-for-weight-loss-over-40.html">Daily Routine For Weight Loss Over 40</a></li>
+<li><a href="pages/easy-healthy-meals-for-men-over-40.html">Easy Healthy Meals For Men Over 40</a></li>
+<li><a href="pages/easy-meal-plan-for-men-over-50-weight-loss.html">Easy Meal Plan For Men Over 50 Weight Loss</a></li>
+<li><a href="pages/easy-meals-when-trying-to-lose-weight-but-busy.html">Easy Meals When Trying To Lose Weight But Busy</a></li>
+<li><a href="pages/healthy-choices-at-a-diner-for-weight-loss.html">Healthy Choices At A Diner For Weight Loss</a></li>
+<li><a href="pages/healthy-fast-food-options-for-weight-loss-men.html">Healthy Fast Food Options For Weight Loss Men</a></li>
+<li><a href="pages/healthy-meal-planning-for-men-over-45.html">Healthy Meal Planning For Men Over 45</a></li>
+<li><a href="pages/healthy-meals-for-busy-men-over-45.html">Healthy Meals For Busy Men Over 45</a></li>
+<li><a href="pages/healthy-options-at-a-restaurant-for-weight-loss.html">Healthy Options At A Restaurant For Weight Loss</a></li>
+<li><a href="pages/healthy-options-at-a-steakhouse-for-weight-loss.html">Healthy Options At A Steakhouse For Weight Loss</a></li>
+<li><a href="pages/healthy-takeout-meals-for-weight-loss.html">Healthy Takeout Meals For Weight Loss</a></li>
+<li><a href="pages/healthy-takeout-options-for-weight-loss.html">Healthy Takeout Options For Weight Loss</a></li>
+<li><a href="pages/healthy-takeout-options-for-weight-loss-men.html">Healthy Takeout Options For Weight Loss Men</a></li>
+<li><a href="pages/how-men-over-50-should-eat.html">How Men Over 50 Should Eat</a></li>
+<li><a href="pages/how-to-avoid-weight-gain-as-you-age.html">How To Avoid Weight Gain As You Age</a></li>
+<li><a href="pages/how-to-eat-out-and-still-lose-weight.html">How To Eat Out And Still Lose Weight</a></li>
+<li><a href="pages/how-to-lose-belly-fat-after-50-men.html">How To Lose Belly Fat After 50 Men</a></li>
+<li><a href="pages/how-to-lose-belly-fat-men-over-50.html">How To Lose Belly Fat Men Over 50</a></li>
+<li><a href="pages/how-to-lose-weight-after-45-male.html">How To Lose Weight After 45 Male</a></li>
+<li><a href="pages/how-to-lose-weight-when-you-eat-out-a-lot.html">How To Lose Weight When You Eat Out A Lot</a></li>
+<li><a href="pages/how-to-lose-weight-with-a-slow-metabolism.html">How To Lose Weight With A Slow Metabolism</a></li>
+<li><a href="pages/how-to-lose-weight-with-slow-metabolism-over-45.html">How To Lose Weight With Slow Metabolism Over 45</a></li>
+<li><a href="pages/how-to-lose-weight-without-counting-calories-men.html">How To Lose Weight Without Counting Calories Men</a></li>
+<li><a href="pages/how-to-lose-weight-without-dieting-after-40.html">How To Lose Weight Without Dieting After 40</a></li>
+<li><a href="pages/how-to-lose-weight-without-dieting-men-over-50.html">How To Lose Weight Without Dieting Men Over 50</a></li>
+<li><a href="pages/how-to-speed-up-metabolism-after-45.html">How To Speed Up Metabolism After 45</a></li>
+<li><a href="pages/how-to-stay-consistent-with-diet-over-45.html">How To Stay Consistent With Diet Over 45</a></li>
+<li><a href="pages/how-to-stay-consistent-with-weight-loss-over-40.html">How To Stay Consistent With Weight Loss Over 40</a></li>
+<li><a href="pages/how-to-stop-gaining-weight-as-you-age-male.html">How To Stop Gaining Weight As You Age Male</a></li>
+<li><a href="pages/landingpage-how-to-lose-weight-after-45-male.html">Lose Weight After 45 – Free Guide | Today's Food Coach</a></li>
+<li><a href="pages/meal-plan-for-men-over-50.html">Meal Plan For Men Over 50</a></li>
+<li><a href="pages/quick-dinners-for-weight-loss-men-over-50.html">Quick Dinners For Weight Loss Men Over 50</a></li>
+<li><a href="pages/quick-healthy-meals-for-busy-men-over-40.html">Quick Healthy Meals For Busy Men Over 40</a></li>
+<li><a href="pages/realistic-diet-plan-for-men-over-50.html">Realistic Diet Plan For Men Over 50</a></li>
+<li><a href="pages/simple-daily-diet-for-men-over-45-to-lose-weight.html">Simple Daily Diet For Men Over 45 To Lose Weight</a></li>
+<li><a href="pages/simple-weight-loss-strategies-for-men-over-45.html">Simple Weight Loss Strategies For Men Over 45</a></li>
+<li><a href="pages/weight-loss-meal-plan-for-men-50.html">Weight Loss Meal Plan For Men 50</a></li>
+<li><a href="pages/what-should-a-45-year-old-man-eat-daily-to-lose-weight.html">What Should A 45 Year Old Man Eat Daily To Lose Weight</a></li>
+<li><a href="pages/what-should-a-50-year-old-man-eat-to-lose-belly-fat.html">What Should A 50 Year Old Man Eat To Lose Belly Fat</a></li>
+<li><a href="pages/what-should-a-50-year-old-man-eat-to-lose-weight.html">What Should A 50 Year Old Man Eat To Lose Weight</a></li>
+<li><a href="pages/what-should-i-eat-every-day-to-lose-weight-men-over-50.html">What Should I Eat Every Day To Lose Weight Men Over 50</a></li>
+<li><a href="pages/what-should-i-eat-for-weight-loss-over-45-male.html">What Should I Eat For Weight Loss Over 45 Male</a></li>
+<li><a href="pages/what-should-i-eat-to-lose-belly-fat-male-over-45.html">What Should I Eat To Lose Belly Fat Male Over 45</a></li>
+<li><a href="pages/what-to-eat-at-a-restaurant-to-lose-belly-fat.html">What To Eat At A Restaurant To Lose Belly Fat</a></li>
+<li><a href="pages/what-to-eat-at-a-restaurant-to-lose-weight.html">What To Eat At A Restaurant To Lose Weight</a></li>
+<li><a href="pages/what-to-eat-at-night-when-trying-to-lose-weight.html">What To Eat At Night When Trying To Lose Weight</a></li>
+<li><a href="pages/what-to-eat-for-lunch-at-work-to-lose-weight.html">What To Eat For Lunch At Work To Lose Weight</a></li>
+<li><a href="pages/what-to-eat-for-lunch-at-work-to-lose-weight-men.html">What To Eat For Lunch At Work To Lose Weight Men</a></li>
+<li><a href="pages/what-to-eat-to-lose-20-pounds-men-over-45.html">What To Eat To Lose 20 Pounds Men Over 45</a></li>
+<li><a href="pages/what-to-eat-when-eating-out-and-trying-to-lose-weight.html">What To Eat When Eating Out And Trying To Lose Weight</a></li>
+<li><a href="pages/what-to-order-at-a-restaurant-to-lose-weight.html">What To Order At A Restaurant To Lose Weight</a></li>
+<li><a href="pages/what-to-order-at-a-steakhouse-to-lose-weight.html">What To Order At A Steakhouse To Lose Weight</a></li>
+<li><a href="pages/why-am-i-gaining-weight-after-50.html">Why Am I Gaining Weight After 50</a></li>
+<li><a href="pages/why-diets-fail-for-men-over-40.html">Why Diets Fail For Men Over 40</a></li>
+<li><a href="pages/why-do-i-gain-weight-even-when-i-eat-healthy.html">Why Do I Gain Weight Even When I Eat Healthy</a></li>
+<li><a href="pages/why-is-it-harder-to-lose-weight-after-40.html">Why Is It Harder To Lose Weight After 40</a></li>
+<li><a href="pages/why-is-it-so-hard-to-lose-weight-after-45-male.html">Why Is It So Hard To Lose Weight After 45 Male</a></li>
+</ul>
+<h2>Eating Out & Real Life</h2>
+<ul>
+<li><a href="pages/healthy-eating-after-45.html">Healthy Eating After 45</a></li>
+<li><a href="pages/how-to-avoid-overeating-at-night.html">How To Avoid Overeating At Night</a></li>
+<li><a href="pages/how-to-break-the-habit-of-night-eating.html">How To Break The Habit Of Night Eating</a></li>
+<li><a href="pages/how-to-build-healthy-eating-habits-after-40.html">How To Build Healthy Eating Habits After 40</a></li>
+<li><a href="pages/how-to-eat-better-without-strict-diets.html">How To Eat Better Without Strict Diets</a></li>
+<li><a href="pages/how-to-eat-healthy-at-an-italian-restaurant.html">How To Eat Healthy At An Italian Restaurant</a></li>
+<li><a href="pages/how-to-eat-healthy-at-fast-food-restaurants.html">How To Eat Healthy At Fast Food Restaurants</a></li>
+<li><a href="pages/how-to-eat-healthy-without-dieting.html">How To Eat Healthy Without Dieting</a></li>
+<li><a href="pages/how-to-stop-overeating-at-night.html">How To Stop Overeating At Night</a></li>
+<li><a href="pages/how-to-stop-stress-eating-at-night.html">How To Stop Stress Eating At Night</a></li>
+<li><a href="pages/what-to-do-instead-of-eating-at-night.html">What To Do Instead Of Eating At Night</a></li>
+<li><a href="pages/what-to-eat-after-work-when-tired-and-hungry.html">What To Eat After Work When Tired And Hungry</a></li>
+<li><a href="pages/what-to-eat-after-work-when-too-tired-to-cook.html">What To Eat After Work When Too Tired To Cook</a></li>
+<li><a href="pages/what-to-eat-at-an-italian-restaurant-on-a-diet.html">What To Eat At An Italian Restaurant On A Diet</a></li>
+<li><a href="pages/what-to-eat-at-night-instead-of-snacking.html">What To Eat At Night Instead Of Snacking</a></li>
+<li><a href="pages/what-to-eat-when-eating-out-on-a-diet.html">What To Eat When Eating Out On A Diet</a></li>
+<li><a href="pages/what-to-eat-when-you-have-no-time-to-cook.html">What To Eat When You Have No Time To Cook</a></li>
+<li><a href="pages/what-to-order-at-a-mexican-restaurant-on-a-diet.html">What To Order At A Mexican Restaurant On A Diet</a></li>
+</ul>
+<h2>Cravings & Habits</h2>
+<ul>
+<li><a href="pages/healthy-snacks-for-late-night-cravings.html">Healthy Snacks For Late Night Cravings</a></li>
+<li><a href="pages/how-to-control-nighttime-cravings.html">How To Control Nighttime Cravings</a></li>
+<li><a href="pages/how-to-stop-late-night-snacking.html">How To Stop Late Night Snacking</a></li>
+<li><a href="pages/why-am-i-always-hungry-at-night-male.html">Why Am I Always Hungry At Night Male</a></li>
+<li><a href="pages/why-am-i-hungry-at-night-after-dinner.html">Why Am I Hungry At Night After Dinner</a></li>
+<li><a href="pages/why-do-i-crave-food-at-night.html">Why Do I Crave Food At Night</a></li>
+</ul>
 
-  <!-- All Guides (condensed but still searchable) -->
-  <h2 class="section-title">📚 All Nutrition Guides (A–Z)</h2>
-  <div class="grid">
-    <a href="pages/best-diet-for-men-over-45-to-lose-weight.html">Best Diet For Men Over 45 To Lose Weight</a>
-    <a href="pages/best-eating-habits-for-men-over-40.html">Best Eating Habits For Men Over 40</a>
-    <a href="pages/best-restaurant-meals-for-weight-loss-men.html">Best Restaurant Meals For Weight Loss Men</a>
-    <a href="pages/daily-routine-for-weight-loss-over-40.html">Daily Routine For Weight Loss Over 40</a>
-    <a href="pages/diet-without-calorie-counting.html">Diet Without Calorie Counting</a>
-    <a href="pages/easy-healthy-meals-for-men-over-40.html">Easy Healthy Meals For Men Over 40</a>
-    <a href="pages/healthy-choices-at-a-diner-for-weight-loss.html">Healthy Choices At A Diner For Weight Loss</a>
-    <a href="pages/healthy-dinner-ideas-after-work-for-men.html">Healthy Dinner Ideas After Work For Men</a>
-    <a href="pages/healthy-eating-after-45.html">Healthy Eating After 45</a>
-    <a href="pages/healthy-fast-food-options-for-weight-loss-men.html">Healthy Fast Food Options For Weight Loss Men</a>
-    <a href="pages/healthy-meal-planning-for-men-over-45.html">Healthy Meal Planning For Men Over 45</a>
-    <a href="pages/healthy-options-at-a-restaurant-for-weight-loss.html">Healthy Options At A Restaurant For Weight Loss</a>
-    <a href="pages/healthy-options-at-a-steakhouse-for-weight-loss.html">Healthy Options At A Steakhouse For Weight Loss</a>
-    <a href="pages/healthy-snacks-for-late-night-cravings.html">Healthy Snacks For Late Night Cravings</a>
-    <a href="pages/healthy-takeout-meals-for-weight-loss.html">Healthy Takeout Meals For Weight Loss</a>
-    <a href="pages/healthy-takeout-options-for-weight-loss.html">Healthy Takeout Options For Weight Loss</a>
-    <a href="pages/how-men-over-50-should-eat.html">How Men Over 50 Should Eat</a>
-    <a href="pages/how-to-avoid-overeating-at-night.html">How To Avoid Overeating At Night</a>
-    <a href="pages/how-to-avoid-weight-gain-as-you-age.html">How To Avoid Weight Gain As You Age</a>
-    <a href="pages/how-to-break-the-habit-of-night-eating.html">How To Break The Habit Of Night Eating</a>
-    <a href="pages/how-to-build-healthy-eating-habits-after-40.html">How To Build Healthy Eating Habits After 40</a>
-    <a href="pages/how-to-control-nighttime-cravings.html">How To Control Nighttime Cravings</a>
-    <a href="pages/how-to-control-portions-without-counting-calories.html">How To Control Portions Without Counting Calories</a>
-    <a href="pages/how-to-eat-better-without-strict-diets.html">How To Eat Better Without Strict Diets</a>
-    <a href="pages/how-to-eat-healthy-at-an-italian-restaurant.html">How To Eat Healthy At An Italian Restaurant</a>
-    <a href="pages/how-to-eat-healthy-at-fast-food-restaurants.html">How To Eat Healthy At Fast Food Restaurants</a>
-    <a href="pages/how-to-eat-healthy-without-dieting.html">How To Eat Healthy Without Dieting</a>
-    <a href="pages/how-to-eat-out-and-still-lose-weight.html">How To Eat Out And Still Lose Weight</a>
-    <a href="pages/how-to-lose-belly-fat-men-over-50.html">How To Lose Belly Fat Men Over 50</a>
-    <a href="pages/how-to-lose-weight-after-45-male.html">How To Lose Weight After 45 Male</a>
-    <a href="pages/how-to-lose-weight-with-a-slow-metabolism.html">How To Lose Weight With A Slow Metabolism</a>
-    <a href="pages/how-to-lose-weight-without-dieting-after-40.html">How To Lose Weight Without Dieting After 40</a>
-    <a href="pages/how-to-speed-up-metabolism-after-45.html">How To Speed Up Metabolism After 45</a>
-    <a href="pages/how-to-stay-consistent-with-diet.html">How To Stay Consistent With Diet</a>
-    <a href="pages/how-to-stay-consistent-with-weight-loss-over-40.html">How To Stay Consistent With Weight Loss Over 40</a>
-    <a href="pages/how-to-stop-counting-calories.html">How To Stop Counting Calories</a>
-    <a href="pages/how-to-stop-late-night-snacking.html">How To Stop Late Night Snacking</a>
-    <a href="pages/how-to-stop-overeating-at-night.html">How To Stop Overeating At Night</a>
-    <a href="pages/how-to-stop-stress-eating-at-night.html">How To Stop Stress Eating At Night</a>
-    <a href="pages/intermittent-fasting-meal-plan.html">Intermittent Fasting Meal Plan</a>
-    <a href="pages/landingpage-how-to-lose-weight-after-45-male.html">Lose Weight After 45 – Free Guide</a>
-    <a href="pages/meal-plan-for-men-over-50.html">Meal Plan For Men Over 50</a>
-    <a href="pages/quick-healthy-meals-for-busy-men-over-40.html">Quick Healthy Meals For Busy Men Over 40</a>
-    <a href="pages/simple-diet-plan-for-busy-professionals.html">Simple Diet Plan For Busy Professionals</a>
-    <a href="pages/simple-weight-loss-strategies-for-men-over-45.html">Simple Weight Loss Strategies For Men Over 45</a>
-    <a href="pages/weight-loss-meal-plan-for-men-50.html">Weight Loss Meal Plan For Men 50</a>
-    <a href="pages/what-to-do-instead-of-eating-at-night.html">What To Do Instead Of Eating At Night</a>
-    <a href="pages/what-to-eat-after-work-when-tired-and-hungry.html">What To Eat After Work When Tired And Hungry</a>
-    <a href="pages/what-to-eat-at-a-restaurant-to-lose-weight.html">What To Eat At A Restaurant To Lose Weight</a>
-    <a href="pages/what-to-eat-at-an-italian-restaurant-on-a-diet.html">What To Eat At An Italian Restaurant On A Diet</a>
-    <a href="pages/what-to-eat-at-night-when-trying-to-lose-weight.html">What To Eat At Night When Trying To Lose Weight</a>
-    <a href="pages/what-to-eat-for-lunch-at-work-to-lose-weight.html">What To Eat For Lunch At Work To Lose Weight</a>
-    <a href="pages/what-to-eat-when-eating-out-on-a-diet.html">What To Eat When Eating Out On A Diet</a>
-    <a href="pages/what-to-order-at-a-mexican-restaurant-on-a-diet.html">What To Order At A Mexican Restaurant On A Diet</a>
-    <a href="pages/what-to-order-at-a-restaurant-to-lose-weight.html">What To Order At A Restaurant To Lose Weight</a>
-    <a href="pages/what-to-order-at-a-steakhouse-to-lose-weight.html">What To Order At A Steakhouse To Lose Weight</a>
-    <a href="pages/why-am-i-gaining-weight-after-50.html">Why Am I Gaining Weight After 50</a>
-    <a href="pages/why-am-i-hungry-at-night-after-dinner.html">Why Am I Hungry At Night After Dinner</a>
-    <a href="pages/why-diets-fail-for-men-over-40.html">Why Diets Fail For Men Over 40</a>
-    <a href="pages/why-do-i-crave-food-at-night.html">Why Do I Crave Food At Night</a>
-    <a href="pages/why-is-it-harder-to-lose-weight-after-40.html">Why Is It Harder To Lose Weight After 40</a>
-  </div>
 
-  <!-- Final CTA -->
-  <div class="footer-cta">
-    <h2 style="color:#2f5d3a;">Ready for a personalized plan?</h2>
-    <p style="margin: 0.5rem 0 1rem; font-size:1.1rem">Most people know what foods are healthy. The hard part is knowing what to eat <em>today</em>.</p>
-    <p style="margin-bottom: 1.5rem;">Today's Food Coach builds a simple, personalized plan based on your lifestyle, habits, and goals.</p>
-    <a href="https://todaysfoodcoach.com/" class="btn" style="background:#e0a82b; color:#2c2c2c; font-size:1.1rem;">🚀 Start Your Free Trial →</a>
-  </div>
+<hr>
+
+<div class="cta">
+
+<h2>Stop Guessing What to Eat Every Day</h2>
+
+<p>
+Most people don’t fail because they don’t know what’s healthy.
+
+They fail because they’re busy, tired, and making decisions on the fly.
+</p>
+
+<p>
+Today’s Food Coach gives you a simple daily plan based on your goals and lifestyle.
+</p>
+
+<a href="https://todaysfoodcoach.com/" class="cta-button">
+Build Your Plan
+</a>
 
 </div>
+
+</div>
+
 </body>
 </html>
