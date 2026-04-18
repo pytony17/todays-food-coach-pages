@@ -10,13 +10,74 @@ content="Simple, realistic diet plans and meal ideas for men over 45 who want to
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #4CAF50;
+}
+.footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links a {
+        margin: 0 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="images/todaysfoodcoach_logo.png" alt="Today's Food Coach Logo" class="logo">
+<div class="navbar">
+    <a href="index.html">
+        <img src="images/todaysfoodcoach_logo.png" alt="Today's Food Coach Logo" class="logo" style="margin-bottom: 0; max-height: 80px;">
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="https://todaysfoodcoach.com">AI Coach</a>
+        <a href="https://todaysfoodcoach.com/blog">Blog</a>
+        <a href="about-our-content.html">About Our Content</a>
+    </div>
+</div>
 
 <h1>Simple Diet Plans for Men Over 45</h1>
 
@@ -61,7 +122,6 @@ Get Your Daily Plan
 <li><a href="pages/how-to-lose-belly-fat-after-50-men.html">How To Lose Belly Fat After 50 Men</a></li>
 <li><a href="pages/how-to-lose-belly-fat-men-over-50.html">How To Lose Belly Fat Men Over 50</a></li>
 <li><a href="pages/how-to-lose-weight-after-45-male.html">How To Lose Weight After 45 Male</a></li>
-<li><a href="pages/how-to-lose-weight-when-you-eat-out-a-lot.html">How To Lose Weight When You Eat Out A Lot</a></li>
 <li><a href="pages/how-to-lose-weight-with-a-slow-metabolism.html">How To Lose Weight With A Slow Metabolism</a></li>
 <li><a href="pages/how-to-lose-weight-with-slow-metabolism-over-45.html">How To Lose Weight With Slow Metabolism Over 45</a></li>
 <li><a href="pages/how-to-lose-weight-without-counting-calories-men.html">How To Lose Weight Without Counting Calories Men</a></li>
@@ -80,7 +140,6 @@ Get Your Daily Plan
 <li><a href="pages/simple-weight-loss-strategies-for-men-over-45.html">Simple Weight Loss Strategies For Men Over 45</a></li>
 <li><a href="pages/weight-loss-meal-plan-for-men-50.html">Weight Loss Meal Plan For Men 50</a></li>
 <li><a href="pages/what-should-a-45-year-old-man-eat-daily-to-lose-weight.html">What Should A 45 Year Old Man Eat Daily To Lose Weight</a></li>
-<li><a href="pages/what-should-a-50-year-old-man-eat-to-lose-belly-fat.html">What Should A 50 Year Old Man Eat To Lose Belly Fat</a></li>
 <li><a href="pages/what-should-a-50-year-old-man-eat-to-lose-weight.html">What Should A 50 Year Old Man Eat To Lose Weight</a></li>
 <li><a href="pages/what-should-i-eat-every-day-to-lose-weight-men-over-50.html">What Should I Eat Every Day To Lose Weight Men Over 50</a></li>
 <li><a href="pages/what-should-i-eat-for-weight-loss-over-45-male.html">What Should I Eat For Weight Loss Over 45 Male</a></li>
@@ -152,6 +211,15 @@ Today’s Food Coach gives you a simple daily plan based on your goals and lifes
 Build Your Plan
 </a>
 
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 Today's Food Coach. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://todaysfoodcoach.com/privacy">Privacy Policy</a> | 
+        <a href="https://todaysfoodcoach.com/terms">Terms of Service</a> | 
+        <a href="about-our-content.html">About Our Content</a>
+    </div>
 </div>
 
 </div>
